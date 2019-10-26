@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="body">
+    <div class="head">
+<div class="conteiner">
+    <div class="tools">
+    <button class="tool-booton" data-name="pencil">PENCIL</button>
+        <button class="tool-booton" data-name="brush">BRASH</button>
+        <button class="tool-booton" data-name="text">TEXT</button>
+
+        <input type="range" id="select-size" min="0.1" max="50" value="25">  
+           
+        
+        <input type="color" id="select-color">
+        <button class="tool-booton" onclick="clearCanvas()">CLEAR</button>
+    </div>
+
+    <div class="canv">
+        <canvas id="canv" width="800" height="600"></canvas>
+    </div>
+   
+        <div class="coordinates">
+           <div class="x"> <p id="x"><b>X: </b>   <span id="x-coord"></span> </p></div>
+           <div class="y"> <p id="y"><b>Y: </b>   <span id="y-coord"></span> </p></div>
+            
+        </div>
+    </div>
+    </div> 
+   
+  <script src="main.js"></script> 
+
+</body>
+</html>
